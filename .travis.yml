@@ -22,7 +22,7 @@ script:
   - docker run ashutoshbhatt/react-test npm test -- --coverage
 
 deploy:
-  - provide: script
+  - provider: script
   - script: bash ./deploy.sh
     on:
       brach: master
